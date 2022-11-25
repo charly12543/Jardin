@@ -1,0 +1,216 @@
+/* Barra de Navegacion*/
+
+.navbar{
+    padding: 2px;
+    background-color: rgb(249, 179, 217);
+    box-shadow: 2px 2px 4px 2px rgb(241, 21, 223);
+    margin: 8px;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a{
+ /*   color: rgb(173, 143, 66);  */
+    color: beige;
+    font-family: 'Rubik Distressed';
+    font-size: 18px;
+}
+.navbar a:hover{
+    color: #9c27b0;
+}
+
+/* ESTILOS GENERALES */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.seccion-oscura{
+    background-color: rgb(249, 179, 217);
+}
+.seccion-clara{
+    color: black;
+    background-color:white;
+}
+.seccion-titulo{
+    font-size: 2.5rem;
+    padding: 15px 0;
+    font-family: 'Rubik Distressed';
+    text-align: center;
+    color: rgb(173, 143, 66);
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+.h1{
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #d2c7c7;
+}
+
+
+/* CABECERA/INICIO */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    height: 80vh !important;
+    background:url(imagenes/alberca4.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.hero-principal h1{
+    font-size: 2.5rem;
+    font-family: 'Rubik Distressed';
+ /*   font-family: 'Dancing Script', cursive; me gusto este tpo de letra*/
+    color: rgb(173, 143, 66);
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+/*  color: blanchedalmond; */ 
+    color: beige;
+    font-family: 'Lobster', cursive;
+}
+
+/* NOSOTROS */
+.nosotros{
+    padding: 10px;
+    height: 500px;
+    margin: 17px;
+    box-shadow: 2px 2px 4px 2px rgb(241, 21, 223);
+}
+.nosotros-principal h2{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color:beige;
+
+}
+
+/*PRODUCTOS*/
+.productos{
+    padding: 40px 40px 60px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.productos .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    transition: all 0.2s ease-in;
+    
+}
+.productos .card{
+    box-shadow: 2px 2px 4px 2px rgb(241, 21, 223);
+}
+.productos .card:hover{
+    color: white;
+    background-color: rgb(249, 179, 217);
+}    
+.productos img{
+    width: 100%;
+    height: 150px;
+}
+
+    /*GALERIA*/
+ #galeria img{
+    width: 100%;
+    height: 250px;
+}
+#galeria .col-lg-4{
+    padding: 25px;
+    margin: 0 !important;
+}
+#galeria img:hover{
+    border: 5px solid whitesmoke;
+}
+
+
+/*CARRUSEL*/
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    padding: 30px;
+    height: 500px;
+    margin: 1px;
+   
+}   
+
+.carousel .contenedor{
+    width: 100%;
+    text-align: center;
+} 
+
+
+
+
+/*SECCION contacto */
+.contacto{
+    
+    padding: 90px 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: initial;
+    margin: 17px;
+    box-shadow: 2px 2px 4px 2px rgb(241, 21, 223);
+
+}
+
+.imagenes{
+    flex-direction: row;
+    border-radius: 50%;
+}
+
+.bg6 {
+        width: 100%;
+        box-shadow: 2px 2px 4px 2px rgb(241, 21, 223);
+    }
+
+
+/* RESPONSIVE */
+
+@media screen and (max-widt:700px) {
+    .navbar-brand{
+        display: none;
+
+    }
+    @media screen and(min-width:700px) {
+        .hero-inferior-imagen{
+            max-width: 600px;
+    
+        }
+    }
+    
+    @media screen and (max-width:400px){
+        .overlay p{
+            font-size: 18px;
+        }
+        .overlay i{
+            font-size: 40px;
+        }
+    }
+
+    
+}
+
+@media screen and(min-width:700px) {
+    .hero-inferior-imagen{
+        max-width: 600px;
+
+    }
+}
+
