@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.navbar a,p{
+.navbar a{
  /*   color: rgb(173, 143, 66);  */
     color: beige;
     font-family: 'Rubik Distressed';
