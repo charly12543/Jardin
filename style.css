@@ -247,6 +247,18 @@ section{
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
+/* NOSOTROS PREMIUM */
+.nosotros .lead {
+  font-size: 1.2rem;
+  color: #e8f5e9;
+}
+
+.frase-premium {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #a5d6a7;
+}
+
 /* ===============================
    RESPONSIVE
 =================================*/
