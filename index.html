@@ -18,6 +18,9 @@
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
+<!-- AOS Animaciones -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">  
+
 </head>
 
 <body>
@@ -48,7 +51,7 @@
 </nav>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="inicio">
+<section class="hero" id="inicio" data-aos="fade">
   <div class="hero-principal text-center">
     <h1 class="hero-title">Celebra tus momentos más especiales</h1>
     <p class="hero-sub">
@@ -63,7 +66,7 @@
 </section>
 
 <!-- NOSOTROS PREMIUM -->
-<section class="nosotros seccion-oscura" id="nosotros">
+<section class="nosotros seccion-oscura" id="nosotros" data-aos="fade-up">
   <div class="container text-center py-5">
 
     <h2 class="seccion-titulo mb-4">Un lugar creado para momentos inolvidables</h2>
@@ -89,7 +92,7 @@
 </section>
 
 <!-- ================= PRODUCTOS ================= -->
-<section class="productos seccion-clara" id="productos">
+<section class="productos seccion-clara" id="productos" data-aos="fade-up">
   <h2 class="seccion-titulo">Nuestros Servicios</h2>
 
   <div class="container">
@@ -144,7 +147,7 @@
 </section>
 
 <!-- ================= GALERIA ================= -->
-<section class="carousel" id="galeria">
+<section class="carousel" data-aos="zoom-in">
   <h2 class="seccion-titulo">Galería</h2>
 
   <div id="carouselExampleCaptions" class="carousel slide seccion-oscura" data-bs-ride="carousel">
@@ -185,7 +188,7 @@
 </section>
 
 <!-- ================= CONTACTO ================= -->
-<section class="contacto" id="contacto">
+<section class="content contacto" id="contacto" data-aos="fade-up">
   <h2 class="seccion-titulo">Contacto</h2>
 
   <p><a href="tel:7341180487">Teléfono: 7341180487</a></p>
@@ -217,6 +220,18 @@ window.addEventListener("scroll", function(){
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+  
+<!-- AOS Animaciones -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 900,     // velocidad animación
+  once: true,        // solo una vez
+  easing: 'ease-out-cubic'
+});
+</script>
+  
 
 </body>
 </html>
