@@ -1,4 +1,4 @@
-/* ===============================
+/* =============================== 
    ESTILO GLOBAL MODERNO
 =================================*/
 
@@ -20,11 +20,6 @@ body{
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     margin: 0;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.navbar-collapse{
-    align-items: center;
-    justify-content: space-between;
 }
 
 .navbar a{
@@ -63,7 +58,6 @@ section{
     font-size: 2.3rem;
     padding: 20px 0;
     font-weight: 600;
-    letter-spacing: .5px;
     text-align: center;
 }
 
@@ -103,48 +97,13 @@ section{
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
-.nosotros-principal h2{
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 800px;
-}
-
 /* ===============================
-   PRODUCTOS
+   PRODUCTOS PREMIUM
 =================================*/
 
 .productos{
     padding: 60px 20px;
 }
-
-.productos .card{
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: .3s ease;
-}
-
-.productos .card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-.productos img{
-    height: 220px;
-  object-fit: cover;
-}
-
-.productos .btn{
-    background-color: #16a34a;
-    border: none;
-}
-
-.productos .btn:hover{
-    background-color: #15803d;
-}
-
-/* PRODUCTOS PREMIUM */
 
 .card-producto {
   border: none;
@@ -167,14 +126,16 @@ section{
 .card-producto .card-title {
   font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 15px;
-  color: #111827;
 }
 
 .card-producto .card-text {
   font-size: 1rem;
   color: #4b5563;
-  margin-bottom: 20px;
+}
+
+.card-producto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .btn-producto {
@@ -191,40 +152,9 @@ section{
   transform: translateY(-2px);
 }
 
-.card-producto:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
 /* ===============================
-   CARRUSEL
+   CARRUSEL PREMIUM
 =================================*/
-
-/* Carrusel limpio y consistente */
-.carousel-item {
-  height: 450px;
-}
-
-.carousel-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.carousel-item img,
-.carousel-item video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel .contenedor{
-    width: 100%;
-    text-align: center;
-}
-
-/* ========================= */
-/* CAROUSEL PREMIUM ADAPTADO */
-/* ========================= */
 
 .carousel-item {
   position: relative;
@@ -247,7 +177,6 @@ section{
 .carousel-caption {
   z-index: 2;
   bottom: 40px;
-  text-align: center;
   text-shadow: 0 4px 15px rgba(0,0,0,0.7);
 }
 
@@ -256,11 +185,6 @@ section{
   font-weight: 600;
 }
 
-.carousel-caption p {
-  font-size: 1.1rem;
-}
-
-/* Indicadores más elegantes */
 .carousel-indicators button {
   width: 12px;
   height: 12px;
@@ -286,10 +210,6 @@ section{
     font-weight: 500;
 }
 
-.contacto a:hover{
-    color: #15803d;
-}
-
 .imagenes{
     display: flex;
     justify-content: center;
@@ -313,49 +233,6 @@ section{
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
-
-/* HERO PREMIUM */
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 15px;
-  text-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-.hero-sub {
-  font-size: 1.25rem;
-  color: #e2e8f0;
-  margin-bottom: 25px;
-  max-width: 700px;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.4);
-}
-
-.btn-hero {
-  background-color: #16a34a;
-  color: white;
-  font-weight: 600;
-  padding: 12px 28px;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  transition: .3s ease;
-}
-
-.btn-hero:hover {
-  background-color: #15803d;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-
-
-
-
-
-
-
-
 
 /* ===============================
    RESPONSIVE
