@@ -1,142 +1,125 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">  
-    <!--Bootstrap iconos-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <title>Jardin Nati'z</title>
+<title>Jardín Nati'z</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font Poppins (IMPORTANTE) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    <!--NavBar-->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <p>Menu</p>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-toggler">  
-            <a class="navbar-brand" href="#">
-                <img src="imagenes/logo-jardin.jpeg" alt="logo-jardin" width="130" height="100"  style="border-radius:0 20px 0 20px ;">
-            </a>
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#productos">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <!--Seccion Hero-->
-      <section class="hero" id="inicio">
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#inicio">
+      <img src="imagenes/logo-jardin.jpeg" alt="Logo Jardín" width="110" height="85" style="border-radius:12px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
   <div class="hero-principal text-center">
     <h1 class="hero-title">Celebra tus momentos más especiales</h1>
     <p class="hero-sub">
-      Jardín con alberca, áreas verdes y ambiente familiar único.  
-      El lugar ideal para bodas, bautizos, cumpleaños y eventos inolvidables.
+      Jardín con alberca, áreas verdes y ambiente familiar único.
+      El lugar ideal para bodas, bautizos y eventos inolvidables.
     </p>
-    <a href="https://api.whatsapp.com/send?phone=527341180487&text=Hola, quiero información!" class="btn btn-hero">
-      Solicitar Información
+    <a href="https://api.whatsapp.com/send?phone=527341180487&text=Hola, quiero información!" 
+       class="btn btn-hero">
+       Solicitar Información
     </a>
   </div>
 </section>
 
-     <!--Nosotros-->
-    <section class="nosotros seccion-oscura" id="nosotros">
-      <div class="nosotros-principal">
-            <h1 class="seccion-titulo">NOSOTROS</h1>
-            <h2>
-              "Somos un jardin familiar, nos especializamos en ofrecerte el mejor lugar para tus eventos sociales y reuniones, brindandote un excelente servicio.
-               contamos con estacionamientos y seguridad para que te relajes y disfrutes plenamente tu evento."
-             </h2>
-             
-        </div>
-    </section>
+<!-- ================= NOSOTROS ================= -->
+<section class="nosotros seccion-oscura" id="nosotros">
+  <div class="nosotros-principal text-center">
+    <h2 class="seccion-titulo">Nosotros</h2>
+    <p>
+      Somos un jardín familiar especializado en eventos sociales.
+      Ofrecemos estacionamiento, seguridad y atención personalizada
+      para que disfrutes plenamente tu celebración.
+    </p>
+  </div>
+</section>
 
-
-     <!--PRODUCTOS-->
+<!-- ================= PRODUCTOS ================= -->
 <section class="productos seccion-clara" id="productos">
   <h2 class="seccion-titulo">Nuestros Servicios</h2>
 
   <div class="container">
     <div class="row g-4">
 
-      <!-- Card 1 -->
       <div class="col-lg-3 col-md-6">
         <div class="card card-producto h-100">
           <img src="imagenes/alberca1.jpeg" class="card-img-top" alt="Área con alberca">
           <div class="card-body">
             <h5 class="card-title">Área con Alberca</h5>
-            <p class="card-text">
-              Espacio amplio con alberca ideal para eventos familiares y celebraciones.
-            </p>
+            <p class="card-text">Espacio amplio ideal para eventos familiares.</p>
             <a href="#contacto" class="btn btn-producto">Más Información</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="col-lg-3 col-md-6">
         <div class="card card-producto h-100">
           <img src="imagenes/mobiliario1.jpeg" class="card-img-top" alt="Mobiliario">
           <div class="card-body">
-            <h5 class="card-title">Renta del Mobiliario</h5>
-            <p class="card-text">
-              Dale ese detalle a tus eventos con el mobiliario y colores a tu gusto.
-            </p>
-            <a href="galeria.html" class="btn btn-producto">Ver Galería</a>
+            <h5 class="card-title">Renta de Mobiliario</h5>
+            <p class="card-text">Mobiliario elegante adaptado a tu evento.</p>
+            <a href="#contacto" class="btn btn-producto">Más Información</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="col-lg-3 col-md-6">
         <div class="card card-producto h-100">
           <img src="meseros.jpg" class="card-img-top" alt="Jardín para eventos">
           <div class="card-body">
             <h5 class="card-title">Jardín para Eventos</h5>
-            <p class="card-text">
-              Áreas verdes amplias perfectas para bodas, XV años y eventos sociales.
-            </p>
+            <p class="card-text">Áreas verdes perfectas para bodas y XV años.</p>
             <a href="#contacto" class="btn btn-producto">Más Información</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 4 -->
       <div class="col-lg-3 col-md-6">
         <div class="card card-producto h-100">
           <img src="banquetes.jpg" class="card-img-top" alt="Eventos personalizados">
           <div class="card-body">
             <h5 class="card-title">Eventos Personalizados</h5>
-            <p class="card-text">
-              Adaptamos el espacio según tu evento para crear momentos inolvidables.
-            </p>
+            <p class="card-text">Adaptamos cada espacio a tu celebración.</p>
             <a href="#contacto" class="btn btn-producto">Más Información</a>
           </div>
         </div>
@@ -146,88 +129,80 @@
   </div>
 </section>
 
-      <!--CARRUSEL DE IMAGENES-->
+<!-- ================= GALERIA ================= -->
+<section class="carousel" id="galeria">
+  <h2 class="seccion-titulo">Galería</h2>
 
-      <section class="carousel">
-           <div><h2 class="seccion-titulo" id="productos">GALERIA</h2></div>
-      <div id="carouselExampleCaptions" class="contenedor carousel slide  seccion-oscura" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+  <div id="carouselExampleCaptions" class="carousel slide seccion-oscura" data-bs-ride="carousel">
 
-          <!--- Nueva seccion -->
-        <div class="carousel-inner">
-
-  <!-- Slide 1 -->
-  <div class="carousel-item active">
-    <img src="imagenes/alberca1.jpeg" class="d-block w-100 carousel-img" alt="Alberca iluminada">
-    <div class="carousel-caption bg-light bg-opacity-75 rounded p-2">
-      <h5 class="text-dark">Alberca Iluminada</h5>
-      <p class="text-dark">Disfruta de una noche mágica en la alberca iluminada.</p>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
     </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="imagenes/alberca1.jpeg" class="carousel-img" alt="Alberca">
+      </div>
+
+      <div class="carousel-item">
+        <img src="imagenes/mobiliario1.jpeg" class="carousel-img" alt="Jardín">
+      </div>
+
+      <div class="carousel-item">
+        <video class="carousel-img" autoplay muted loop playsinline>
+          <source src="imagenes/video1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="contacto" id="contacto">
+  <h2 class="seccion-titulo">Contacto</h2>
+
+  <p><a href="tel:7341180487">Teléfono: 7341180487</a></p>
+
+  <div class="imagenes">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="imagenes/face.png" alt="Facebook">
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=527341180487" target="_blank">
+      <img src="imagenes/whats.jpg" alt="WhatsApp">
+    </a>
   </div>
 
-  <!-- Slide 2 -->
-  <div class="carousel-item">
-    <img src="imagenes/mobiliario1.jpeg" class="d-block w-100 carousel-img" alt="Jardín amplio">
-    <div class="carousel-caption bg-light bg-opacity-75 rounded p-2">
-      <h5 class="text-dark">Jardín Amplio</h5>
-      <p class="text-dark">Gran y agradable espacio de jardín para tus eventos.</p>
-    </div>
-  </div>
+  <iframe class="bg6"
+    src="https://www.google.com/maps/embed?pb=!1m18..."
+    height="350"
+    style="border:0;" loading="lazy">
+  </iframe>
 
-  <!-- Slide 3 VIDEO -->
-  <div class="carousel-item">
-    <video class="carousel-img" autoplay muted loop playsinline>
-      <source src="imagenes/video1.mp4" type="video/mp4">
-    </video>
-    <div class="carousel-caption bg-light bg-opacity-75 rounded p-2">
-      <h5 class="text-dark">Área de Servicios</h5>
-      <p class="text-dark">Parrilla, barra y refrigerador disponibles.</p>
-    </div>
-  </div>
+</section>
 
-</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!--SECCION DE CONTACTO-->
-
-    <!--Contacto-->
-    <section class="content contacto" id="contacto">
-      <h2 class="seccion-titulo" >Contacto</h2><br>
-      <p><a href="tel:7341180487">Telefono: 7341180487</a></p>     
-      <p>Siguenos en nuestras redes sociales!!</p>
-  
-      <div class="imagenes">
-      <a href="https://www.facebook.com/profile.php?id=100087914603402&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-      <img src="imagenes/face.png" alt="icono de facebook" width="60px" height="60px"
-      style="border-radius: 1000px;" ></a>
-  
-     <!--<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <img src="imagenes/instagrama.jpg" alt="icono de instagram" width="60px" height="60px"
-          style="border-radius: 1000px;" >
-      </a>--> 
-  
-      <a href="https://api.whatsapp.com/send?phone=527341180487&text=Hola, Podria darme informacion de la renta del Jardin Natiz!">
-          <img src="imagenes/whats.jpg" alt="icono de whatsapp" width="60px" height="60px"
-          style="border-radius: 1000px;" ></a>
-      </div><br>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15120.596019444107!2d-99.19341483204488!3d18.657308377438575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x85ce7fa8e9189f07%3A0x2ec3df5750fd0ecb!2sTecnol%C3%B3gico%20s%2Fn%2C%20ampliacion%2C%20Plan%20de%20Ayala%2C%2062780%20Zacatepec%20de%20Hidalgo%2C%20Mor.!3m2!1d18.646843399999998!2d-99.1832268!5e0!3m2!1ses-419!2smx!4v1670212693395!5m2!1ses-419!2smx" 
-      width="600" height="450" style="border:0;" allowfullscreen="" 
-      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      class="bg6"></iframe> 
-  </section>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
- 
+<!-- Navbar scroll effect -->
 <script>
 window.addEventListener("scroll", function(){
   const navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
-</script>    
+</script>
 
-          
 </body>
 </html>
